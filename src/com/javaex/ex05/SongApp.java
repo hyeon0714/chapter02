@@ -36,9 +36,14 @@ public class SongApp {
 		c.setYear(2012);
 		c.setTrack("4번 Track");
 		
-		
+		//일반 메소드
 		a.showInfo();
 		b.showInfo();
 		c.showInfo();
+		
+		System.out.println();
+		
+		//toString출력
+		System.out.println(a.toString());
 	}
 }

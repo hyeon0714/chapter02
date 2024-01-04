@@ -11,6 +11,7 @@ public class Song {
 	private int year;
 	private String track;
 	
+	
 	//세터 메소드
 	public void setTitle(String title) {
 		this.title=title;
@@ -51,11 +52,22 @@ public class Song {
 		return this.track;
 	}
 	
+	//게터 세터 단축키: alt+shift+s->generate getter/setter에서 자동으로 만들수 있다
+	//자동 줄 정렬 단축키: ctrl+shift+f
 	
 	
 	//일반 메소드
 	public void showInfo() {
-		System.out.println(this.artist+", "+this.title+" ( "+this.album+", "+this.year+", "+this.track+", "+this.composer+")");
+		System.out.println(this.artist+", "+this.title+" ("+this.album+", "+this.year+", "+this.track+", "+this.composer+")");
+	}
+	
+	//toString 작업으로 입력값 확인하기
+	//단축키: alt+shift+s=>generate toString=>필드값 생성
+	//toString 생성시 입력값을 확인 가능
+	@Override
+	public String toString() {
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
 	}
 	
 }
