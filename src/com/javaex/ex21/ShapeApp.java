@@ -40,5 +40,17 @@ public class ShapeApp {
 		Shape c00=new Circle("블랙", "화이트", 5);
 		c00.draw();
 		
+		
+		//다운 캐스팅
+		//명시적 타입변화를 주어서 자식클래스의 메소드를 가져온다
+		System.out.println();
+		System.out.println();
+		System.out.println(((Ractangle)s01[0]).getWidth());
+		//강제형변환 처럼 앞에 '(자식클래스)'를 넣어주면 자식클래스의 중복이 안된 메소드도 불러올수 있다
+		((Circle)s01[2]).setRadius(5);
+		((Ractangle)s01[0]).setWidth(5);
+		System.out.println(((Circle)s01[2]).getRadius());
+		
+		
 	}
 }
